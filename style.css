@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maincontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(122, 65, 196);
+    background-image: url(bg/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+
+
+.navbar{
+    height: 4vh;
+    width: auto;
+    color: rgb(243, 117, 101);
+    background-color: rgb(124, 109, 87,0.2);
+}
+
+a{
+    margin: 3vw 3vh ;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 2vh;
+    color: rgb(255, 240, 247);
+}
+
+.user{
+    background-image: url(avengers/hero1-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vh;
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.enemy{
+    background-image: url(enemy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25vh;
+    height: 35vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.msg{
+    top:5vh;
+    color: rgb(243, 117, 101);
+    background-color: rgb(124, 109, 87,0.2);
+    font-size: 6vh;
+    text-align: center;
+    visibility: hidden;
+}
+
+.replaybutton{
+    color: rgb(210, 229, 240);
+    background-color: rgba(28, 175, 233, 0.1);
+    height:6vh;
+    width:15vh;
+    font-size: 3vh;
+    position: relative;
+    bottom: 1vh;
+    border-radius: 0.8vh;
+}
+
+
+.score{
+    top:5vh;
+    color: rgb(255, 240, 247);
+    background-color: rgb(124, 109, 87,0.2);
+    font-size: 6vh;
+    text-align: center;
+}
+
+/*This part is to make jump of user*/
+.jumpuser{
+    animation: jump 1.2s linear;
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0vh;
+    }
+    25%{
+        bottom: 40vh;
+    }
+    50%{
+        bottom: 50vh;
+    }
+    75%{
+        bottom: 40vh;
+    }
+    80%{
+        bottom: 35vh;
+    }
+    100%{
+        bottom: 0vh;
+    }
+}
+
+
+.enemyjumper{
+    animation: enemymover 2s linear infinite;
+}
+/*Animation to move the enemy*/
+@keyframes enemymover {
+    0%{
+        right: 0vw;
+    }
+    100%{
+        right:110vw;
+    }
+}
+
+
+
+
+
+/*This part is for the users who using mobiles*/
+@media screen and (max-width:600px) {
+    .user{
+        background-image: url(hero.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 12vh;
+        height: 18vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .enemy{
+        background-image: url(enemy.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 12vh;
+        height: 18vh;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
