@@ -16,8 +16,8 @@ if(isMobile)
 }
 else
 {
-    character_width=0.3*height;
-    character_height=0.4*height;
+    character_width=0.33*height;
+    character_height=0.45*height;
 }
 
 
@@ -89,7 +89,7 @@ const mainfunctionthis=setInterval(() => {
     let maincontainer=document.getElementsByClassName("maincontainer")[0];
 
 
-    if(lastchangedbg==5000)
+    if(lastchangedbg==10000)
     {
         lastchangedbg=0;
         countervariablebg++;
@@ -100,7 +100,7 @@ const mainfunctionthis=setInterval(() => {
         maincontainer.style.backgroundImage='url('+string+')';
     }
 
-    if(lastchangedhero==3000)
+    if(lastchangedhero==6000)
     {
         lastchangedhero=0;
         countervariablehero++;
