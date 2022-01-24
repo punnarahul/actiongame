@@ -1,2 +1,2 @@
 # actiongame
-This is a website
+This is a game
